@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Hugo 0.74.1" />
+  
+  <!-- Mobile Specific Metas -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Country GDP Vs. Its Fertility and Mortality Rates</title>
+  <link rel="icon" href="https://chilam27.github.io/Chi_Portfolio/images/favicon.ico">
+
+  <!-- Twitter Bootstrs CSS -->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/bootstrap/bootstrap.min.css">
+  <!-- Ionicons Fonts Css -->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/ionicons/ionicons.min.css">
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/animate-css/animate.css">
+  <!-- Hero area slider css-->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/slider/slider.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/slick/slick.css">
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/facncybox/jquery.fancybox.css">
+  <!-- hover -->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/hover/hover-min.css">
+  <!-- template main css file -->
+  
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/css/style.min.css" integrity="" media="screen">
+</head><body><section class="top-bar animated-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand" href="https://chilam27.github.io/Chi_Portfolio/">
+						<img src="https://chilam27.github.io/Chi_Portfolio/images/logo2.png" alt="Chi Lam Website">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+						aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navigation">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="https://chilam27.github.io/Chi_Portfolio/">Home</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://chilam27.github.io/Chi_Portfolio/about">About</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://chilam27.github.io/Chi_Portfolio/skills">Skills</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://chilam27.github.io/Chi_Portfolio/resume">Resume</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://chilam27.github.io/Chi_Portfolio/project">Project</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://chilam27.github.io/Chi_Portfolio/contact">Contact</a>
+							</li>
+							
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="global-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2>A Country GDP Vs. Its Fertility and Mortality Rates</h2>
+                    <div class="portfolio-meta">
+                        <span>Sunday, Jun 14, 2020</span>|
+                        <span> Tags:
+                            polynomial regression, scikit-learn
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="single-post">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                
+                <div class="post-img">
+                    <img class="img-fluid" alt="" src="https://chilam27.github.io/Chi_Portfolio/images/blog/P01.jpg">
+                </div>
+                
+                <div class="post-content">
+                    <p>I want to see whether there is a relationship between a country&rsquo;s GDP and its fertility and mortality rates. With the assumption: higher GDP corresponds with lower fertility and mortality rates, I will use data from World Bank Group to analyze using a regression model. I recreated this project from my CMSE class but improved it by applying a fundamental data science project&rsquo;s outline.</p>
+<p>For in-depth step-by-step code analysis, the repository for this project can be found <a href="https://github.com/chilam27/GDP_Fertility_Mortality_Relation">here</a>.</p>
+<p>I stumbled across this question when in my social science class about the prosperity of different countries and how it affects the country&rsquo;s population. Specially, we looked at three types of nations: core nations, semi-periphery nations, and periphery nations. To summarize, a core nation is one that has strong power, both politically and economically (GDP &gt; 1.5 trillion). While a periphery nation is a complete opposite (GDP &lt; 250 billion). Hence, a semi-periphery nation is the one in between the two groups (1.5 trillion &gt;= GDP &gt; 250 billion).</p>
+<p>I finished this project once (<a href="https://github.com/chilam27/GDP_Fertility_Mortality_Relation/blob/master/CMSE201_FinalProject.ipynb">CMSE201_FinalProject.ipynb</a>). Intending to improve my data interpretation skill, I redid the project with added steps, such as data cleaning and exploratory data analysis (EDA). I learned that EDA is especially crucial in identifying trends and performing feature engineer (though I will not be applying that technique this time) to produce a better outcome. I also practiced using sklearn package for statistical analysis and building a polynomial regression model.</p>
+<p>Here is the general outline of this project:</p>
+<ol>
+<li><em>Project planning</em> : determine the necessary variables to compute statistical analysis to answer our question.
+<ul>
+<li>List of variables: <strong>GDP</strong> (Gross Domestic Product), <strong>fertility rate</strong> (average number of children that would be born to a woman over her lifetime), and <strong>mortality rate</strong> (can be called death rate; is a measure of the number of deaths in a particular population).</li>
+</ul>
+</li>
+<li><em>Data cleaning</em> : read the dataset in to get familiar with columns and values, modify the data frames, delete null and unnecessary data values, extracting data from original to cleaned CSV files.</li>
+<li><em>Exploratory data analysis (EDA)</em> : observe the cleaned data set and understand the general trend of the data.</li>
+<li><em>Regression model</em> : perform polynomial regression and calculate mean squared error (MSE) and coefficient of determination (R**2).</li>
+</ol>
+<p>As I mentioned above, the World Bank Group will be my data source for this project. Based on my findings, they have a very accountable data bank that I can use for my project. I also do some checking to see if the data is clean and whether there is an empty/ incomplete data point. Although there are incomplete data, it does not seem to affect my analysis too much. Here are the sources for data I collected:</p>
+<p><a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?most_recent_year_desc=false&amp;view=map&amp;year=2018">The World Bank Group: GDP (current US$)</a></p>
+<p><a href="https://data.worldbank.org/indicator/SP.DYN.TFRT.IN/">The World Bank Group: Fertility rate, total (births per woman)</a></p>
+<p><a href="https://data.worldbank.org/indicator/sp.dyn.cdrt.in">The World Bank Group: Death rate, crude (per 1,000 people)</a></p>
+<p>While in the EDA stage, I want to specifically look at the United States and analyze its data and trend before applying the math and algorithm to other countries. The reason I chose the US is that it has no missing data and that I am familiar with this data set the most. Below is the graph of US GDP from 1960 - 2018. It started out with 543.3 billion USD in 1960 and has an exponential growth since then to 20.54 trillion USD in 2018 (though there is a slight dip in 2009 due to the financial crisis).</p>
+<p><img src="https://chilam27.github.io/Chi_Portfolio/images/blog/P01_fig1_2.png" alt="image info"></p>
+<p>Next is the comparison between GDP vs. fertility rate and GDP vs. mortality rate, where GDP will be the independent variable for graphs below. Surprisingly, there is a huge drop in fertility rate from 1960 to late 1970. While the mortality trend is expected based on my assumption (though there is a questionable increase after 2010).</p>
+<p><img src="https://chilam27.github.io/Chi_Portfolio/images/blog/P01_fig2_1.png" alt="image info">  <img src="https://chilam27.github.io/Chi_Portfolio/images/blog/P01_fig3_1.png" alt="image info"></p>
+<p>Afterward, I randomly picked three countries from each nation types that also has no missing data. I decided which country belong to which group based on their 2018 GDP. Here are the list of countries and their graphs respectively:</p>
+<ol>
+<li>Core nations: China, Canada, and India.</li>
+<li>Semi-periphery nations: Belgium, Pakistan, and Norway.</li>
+<li>Periphery nations: Madagascar, Portugal, and Hati.</li>
+</ol>
+<p><img src="https://chilam27.github.io/Chi_Portfolio/images/blog/P01_fig4_1.png" alt="image info"></p>
+<p><img src="https://chilam27.github.io/Chi_Portfolio/images/blog/P01_fig5_1.png" alt="image info"></p>
+<p><img src="https://chilam27.github.io/Chi_Portfolio/images/blog/P01_fig6_1.png" alt="image info"></p>
+<p>From nine countries data and graph above, there is a general trend that increase the GDP will decrease the other two rates. I use MSE and R**2 to track the overall performance of the polynomial regression to see how good the fit or the estimation is. After collecting data from 3 countries of each group, I find the mean of the statistical analysis:</p>
+<p><img src="https://chilam27.github.io/Chi_Portfolio/images/blog/P01_fig7_1.png" alt="image info"></p>
+<p>After having my cleaned data files that are ready to be analyzed, in the EDA stage, I applied the polynomial regression onto United States data. The trend of data shows that, as the GDP increases and the rates of fertility and mortality decrease over time, there seems to be a relationship between GDP and the rates. After running 2nd-degree polynomial regression, the fitted line fitted the data quite well: with MSE of GDP vs. Fertility being 0.157 and GDP vs. Mortality being 0.054; with R**2 of GDP vs. Fertility being 0.285 and GDP vs. Mortality being 0.752.</p>
+<p>Although I could not find out the reason for metrics for the first relationship to be so low, I also analyzed nine more countries from the three groups: core, semi-periphery, and periphery. The reason I picked three countries was that I wanted to eliminate bias. After applying the regression model and applying the metrics (can be found in the Overall Model Performance), most values prove the trend strongly. Except for MSE of GDP vs. Mortality: China and Portugal have large outliers that raise the mean.</p>
+<p>It is clear to us that the statement &ldquo;The higher the GDP is, the lower rates of fertility and mortality are for that country&rdquo; is true. In general, poor countries tend to have higher levels of fertility than rich countries. Because the cost of raising a child in a more developed country is a lot more. Hence why the decrease in fertility rate when GDP increases. But there is also one good side: people live more comfortable in a developed country. One prime example can be better health care system can reduce death rate by a significant percentage. This is why death rate tends to be lower as GDP increases.</p>
+<p>If I would redo this project again, there are two things I would change. First, I want to apply one more layer of selection to decrease the bias in data. I have only eliminated bias by picking countries from each group. I can add another layer by picking countries from each continent. Second, I want to apply the regression model to more countries than just three to increase the sample size. This will strengthen the conclusion of proofing the statement above is true.</p>
+<h4 id="acknowledgments">Acknowledgments</h4>
+<p><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Pritchard, Adam. &ldquo;Markdown Cheatsheet.&quot;</a></p>
+<p><a href="https://gist.github.com/PurpleBooth/109311bb0361f32d87a2">Thompson, Billie. &ldquo;A template to make good README.md&rdquo;</a></p>
+<p><a href="https://gist.github.com/DavidWells/7d2e0e1bc78f4ac59a123ddf8b74932d">Wells, David. &ldquo;aligning-images.md&rdquo;</a></p>
+<p><a href="https://en.wikipedia.org/wiki/List_of_countries_by_GDP_%28nominal%29">Wikipedia contributors. &ldquo;List of countries by GDP (nominal).&rdquo; Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, 9 Jun. 2020. Web. 13 Jun. 2020.</a></p>
+<p><a href="https://worldpopulationreview.com/countries/countries-by-gdp/">World Population Review. &ldquo;GDP Ranked by Country 2020.&quot;</a></p>
+<p><a href="https://www.youtube.com/watch?v=2wzxzHoW-sg&amp;t=381s">&ldquo;machine learning with python video 14 Polynomial Regression.&rdquo; Youtube, uploaded by I know python, 3 Apr. 2020</a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section Start -->
+<footer id="footer">
+    <div class="container">
+        <div class="row content-justify-between">
+            <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                <p class="copyright">Copyright:
+                    <span>
+                        <script>document.write(new Date().getFullYear())</script>
+                    </span> Design and Developed by
+                    <a href="http://www.Themefisher.com" target="_blank">Themefisher</a>.
+                    <br> Get More Bootstrap Template From Our
+                    <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Store</a>
+                </p>
+            </div>
+            <div class="col-md-4 col-12">
+                <!-- Social Media -->
+                <ul class="social text-center text-md-right text-lg-right">
+                    
+                    <li><a href="https://www.facebook.com/dchi27"><i class="ion-social-facebook"></i></a></li>
+                    
+                    <li><a href="https://www.linkedin.com/in/chi-dao-lam-0263891a0/"><i class="ion-social-linkedin"></i></a></li>
+                    
+                    <li><a href="https://github.com/chilam27"><i class="ion-social-github"></i></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer section end -->
+
+<!-- jquery -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/jQurey/jquery.min.js"></script>
+<!-- Form Validation -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/form-validation/jquery.form.js"></script>
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/form-validation/jquery.validate.min.js"></script>
+<!-- slick slider -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/slick/slick.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/bootstrap/bootstrap.min.js"></script>
+<!-- wow js -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/wow-js/wow.min.js"></script>
+<!-- slider js -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/slider/slider.js"></script>
+<!-- Fancybox -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/facncybox/jquery.fancybox.js"></script>
+<!-- template main js -->
+
+<script src="https://chilam27.github.io/Chi_Portfolio/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+</script></body>
+</html>

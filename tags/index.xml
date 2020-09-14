@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Chi Lam Website</title>
+    <link>https://chilam27.github.io/Chi_Portfolio/tags/</link>
+    <description>Recent content in Tags on Chi Lam Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Sep 2020 12:22:40 +0600</lastBuildDate>
+    
+	<atom:link href="https://chilam27.github.io/Chi_Portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>clustering</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/tags/clustering/</link>
+      <pubDate>Sun, 13 Sep 2020 12:22:40 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/tags/clustering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>k-means</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/tags/k-means/</link>
+      <pubDate>Sun, 13 Sep 2020 12:22:40 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/tags/k-means/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unsupervised machine learning algorithms</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/tags/unsupervised-machine-learning-algorithms/</link>
+      <pubDate>Sun, 13 Sep 2020 12:22:40 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/tags/unsupervised-machine-learning-algorithms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deep learning</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/tags/deep-learning/</link>
+      <pubDate>Thu, 30 Jul 2020 12:22:40 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LSTM</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/tags/lstm/</link>
+      <pubDate>Thu, 30 Jul 2020 12:22:40 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/tags/lstm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>time series</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/tags/time-series/</link>
+      <pubDate>Thu, 30 Jul 2020 12:22:40 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/tags/time-series/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Natural Language Processing</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/tags/natural-language-processing/</link>
+      <pubDate>Wed, 15 Jul 2020 12:21:58 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/tags/natural-language-processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>text sentimental analysis</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/tags/text-sentimental-analysis/</link>
+      <pubDate>Wed, 15 Jul 2020 12:21:58 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/tags/text-sentimental-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>topic modeling</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/tags/topic-modeling/</link>
+      <pubDate>Wed, 15 Jul 2020 12:21:58 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/tags/topic-modeling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data scrapping</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/tags/data-scrapping/</link>
+      <pubDate>Wed, 01 Jul 2020 12:27:38 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/tags/data-scrapping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>model productization</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/tags/model-productization/</link>
+      <pubDate>Wed, 01 Jul 2020 12:27:38 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/tags/model-productization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Trulia</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/tags/trulia/</link>
+      <pubDate>Wed, 01 Jul 2020 12:27:38 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/tags/trulia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>polynomial regression</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/tags/polynomial-regression/</link>
+      <pubDate>Sun, 14 Jun 2020 12:29:40 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/tags/polynomial-regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scikit-learn</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/tags/scikit-learn/</link>
+      <pubDate>Sun, 14 Jun 2020 12:29:40 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/tags/scikit-learn/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

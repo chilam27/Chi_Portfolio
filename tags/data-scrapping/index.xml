@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>data scrapping on Chi Lam Website</title>
+    <link>https://chilam27.github.io/Chi_Portfolio/tags/data-scrapping/</link>
+    <description>Recent content in data scrapping on Chi Lam Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jul 2020 12:27:38 +0600</lastBuildDate>
+    
+	<atom:link href="https://chilam27.github.io/Chi_Portfolio/tags/data-scrapping/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Predicting Boston Property Price</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/project/boston_housing_prices/</link>
+      <pubDate>Wed, 01 Jul 2020 12:27:38 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/project/boston_housing_prices/</guid>
+      <description>Introduction Predict Boston property price by analyzing data scraped from trulia.com using advanced regression models. I will go in-depth for all the processes of this project: from using Beautiful Soup to scrape data, to analyze and compare different regression models, and building an Application Programming Interface (API) using a micro web framework in Python: Flask.
+For in-depth step-by-step code analysis, the repository for this project can be found here.
+My goal for this project is to use the best regression model to predict Boston housing prices on Trulia based on the number of features that the source provides.</description>
+    </item>
+    
+  </channel>
+</rss>

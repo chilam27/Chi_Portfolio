@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chi Lam Website</title>
+    <link>https://chilam27.github.io/Chi_Portfolio/</link>
+    <description>Recent content on Chi Lam Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Sep 2020 12:22:40 +0600</lastBuildDate>
+    
+	<atom:link href="https://chilam27.github.io/Chi_Portfolio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What are the Different Roles in a Professional PUBG Team?</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/project/roles_in_pubg/</link>
+      <pubDate>Sun, 13 Sep 2020 12:22:40 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/project/roles_in_pubg/</guid>
+      <description>This post will soon be updated. In the meantime, the GitHub repository with detail README.md for this project can be found HERE.</description>
+    </item>
+    
+    <item>
+      <title>Stock Price Analysis and Prediction</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/project/stock_price_prediction_and_analysis/</link>
+      <pubDate>Thu, 30 Jul 2020 12:22:40 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/project/stock_price_prediction_and_analysis/</guid>
+      <description>TL;DR Created an artificial recurrent neural network, a stacked long short-term memory model, to predict HSBC Bank stock prices to make better buying/ selling decisions with root mean square error of 34.503. I also applied different logic into the model to make it predict the next 30 days of stock prices. I used Python to perform feature engineer and technical analysis on the stock.
+This post is used as a quick overview of the project.</description>
+    </item>
+    
+    <item>
+      <title>Improved Product Review System</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/project/improve_product_review_system/</link>
+      <pubDate>Wed, 15 Jul 2020 12:21:58 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/project/improve_product_review_system/</guid>
+      <description>TL;DR Improved the traditional product review system through text sentimental analysis and Natural Language Processing with a 63.96% accuracy score (using Log regression) and all AUC values above 0.75. By taking only the customer review comments of an Amazon’s product as input, I created a sentiment detection algorithm to rate the product based on its comment. I also included topic modeling in this project to detect the general topics of what the reviews are about.</description>
+    </item>
+    
+    <item>
+      <title>Predicting Boston Property Price</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/project/boston_housing_prices/</link>
+      <pubDate>Wed, 01 Jul 2020 12:27:38 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/project/boston_housing_prices/</guid>
+      <description>Introduction Predict Boston property price by analyzing data scraped from trulia.com using advanced regression models. I will go in-depth for all the processes of this project: from using Beautiful Soup to scrape data, to analyze and compare different regression models, and building an Application Programming Interface (API) using a micro web framework in Python: Flask.
+For in-depth step-by-step code analysis, the repository for this project can be found here.
+My goal for this project is to use the best regression model to predict Boston housing prices on Trulia based on the number of features that the source provides.</description>
+    </item>
+    
+    <item>
+      <title>A Country GDP Vs. Its Fertility and Mortality Rates</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/project/gdp_fertility_mortality_rates/</link>
+      <pubDate>Sun, 14 Jun 2020 12:29:40 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/project/gdp_fertility_mortality_rates/</guid>
+      <description>I want to see whether there is a relationship between a country&amp;rsquo;s GDP and its fertility and mortality rates. With the assumption: higher GDP corresponds with lower fertility and mortality rates, I will use data from World Bank Group to analyze using a regression model. I recreated this project from my CMSE class but improved it by applying a fundamental data science project&amp;rsquo;s outline.
+For in-depth step-by-step code analysis, the repository for this project can be found here.</description>
+    </item>
+    
+    <item>
+      <title>Stock Price Prediction</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/portfolio/portfolio1/</link>
+      <pubDate>Thu, 12 Jul 2018 16:58:55 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/portfolio/portfolio1/</guid>
+      <description>Consectur in Bibendum Totam rem aperiam eaque ipsa quae illo inventore veritatis et quasi architebetea.vitae dicta sunt explicabo. nemo enim ipsam volup as tatem quia voluptassit aspernatur.aut odit aut fugit sed quia consequuntur magni dolores eo ratione voluptatem.sequi nesciunt neque porro quisquam est dolorem ipsum quia dolor amet consectetur adipisci velit. lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</description>
+    </item>
+    
+    <item>
+      <title>Improved Product Review System</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/portfolio/portfolio2/</link>
+      <pubDate>Thu, 12 Jul 2018 16:57:54 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/portfolio/portfolio2/</guid>
+      <description>Consectur in Bibendum Totam rem aperiam eaque ipsa quae illo inventore veritatis et quasi architebetea.vitae dicta sunt explicabo. nemo enim ipsam volup as tatem quia voluptassit aspernatur.aut odit aut fugit sed quia consequuntur magni dolores eo ratione voluptatem.sequi nesciunt neque porro quisquam est dolorem ipsum quia dolor amet consectetur adipisci velit. lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</description>
+    </item>
+    
+    <item>
+      <title>Predicting Boston Property Price</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/portfolio/portfolio3/</link>
+      <pubDate>Thu, 12 Jul 2018 16:56:54 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/portfolio/portfolio3/</guid>
+      <description>Consectur in Bibendum Totam rem aperiam eaque ipsa quae illo inventore veritatis et quasi architebetea.vitae dicta sunt explicabo. nemo enim ipsam volup as tatem quia voluptassit aspernatur.aut odit aut fugit sed quia consequuntur magni dolores eo ratione voluptatem.sequi nesciunt neque porro quisquam est dolorem ipsum quia dolor amet consectetur adipisci velit. lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</description>
+    </item>
+    
+    <item>
+      <title>A Country GDP Vs. Its Fertility and Mortality Rates</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/portfolio/portfolio4/</link>
+      <pubDate>Thu, 12 Jul 2018 16:54:54 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/portfolio/portfolio4/</guid>
+      <description>Consectur in Bibendum Totam rem aperiam eaque ipsa quae illo inventore veritatis et quasi architebetea.vitae dicta sunt explicabo. nemo enim ipsam volup as tatem quia voluptassit aspernatur.aut odit aut fugit sed quia consequuntur magni dolores eo ratione voluptatem.sequi nesciunt neque porro quisquam est dolorem ipsum quia dolor amet consectetur adipisci velit. lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</description>
+    </item>
+    
+    <item>
+      <title>A Country GDP Vs. Its Fertility and Mortality Rates</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/portfolio/portfolio5/</link>
+      <pubDate>Thu, 12 Jul 2018 16:54:54 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/portfolio/portfolio5/</guid>
+      <description>Consectur in Bibendum Totam rem aperiam eaque ipsa quae illo inventore veritatis et quasi architebetea.vitae dicta sunt explicabo. nemo enim ipsam volup as tatem quia voluptassit aspernatur.aut odit aut fugit sed quia consequuntur magni dolores eo ratione voluptatem.sequi nesciunt neque porro quisquam est dolorem ipsum quia dolor amet consectetur adipisci velit. lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</description>
+    </item>
+    
+  </channel>
+</rss>

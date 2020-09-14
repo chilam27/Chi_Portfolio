@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Hugo 0.74.1" />
+  
+  <!-- Mobile Specific Metas -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stock Price Analysis and Prediction</title>
+  <link rel="icon" href="https://chilam27.github.io/Chi_Portfolio/images/favicon.ico">
+
+  <!-- Twitter Bootstrs CSS -->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/bootstrap/bootstrap.min.css">
+  <!-- Ionicons Fonts Css -->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/ionicons/ionicons.min.css">
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/animate-css/animate.css">
+  <!-- Hero area slider css-->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/slider/slider.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/slick/slick.css">
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/facncybox/jquery.fancybox.css">
+  <!-- hover -->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/hover/hover-min.css">
+  <!-- template main css file -->
+  
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/css/style.min.css" integrity="" media="screen">
+</head><body><section class="top-bar animated-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand" href="https://chilam27.github.io/Chi_Portfolio/">
+						<img src="https://chilam27.github.io/Chi_Portfolio/images/logo2.png" alt="Chi Lam Website">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+						aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navigation">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="https://chilam27.github.io/Chi_Portfolio/">Home</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://chilam27.github.io/Chi_Portfolio/about">About</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://chilam27.github.io/Chi_Portfolio/skills">Skills</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://chilam27.github.io/Chi_Portfolio/resume">Resume</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://chilam27.github.io/Chi_Portfolio/project">Project</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://chilam27.github.io/Chi_Portfolio/contact">Contact</a>
+							</li>
+							
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="global-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2>Stock Price Analysis and Prediction</h2>
+                    <div class="portfolio-meta">
+                        <span>Thursday, Jul 30, 2020</span>|
+                        <span> Tags:
+                            time series, deep learning, LSTM
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="single-post">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                
+                <div class="post-img">
+                    <img class="img-fluid" alt="" src="https://chilam27.github.io/Chi_Portfolio/images/blog/P04.jpg">
+                </div>
+                
+                <div class="post-content">
+                    <h1 id="tldr">TL;DR</h1>
+<p>Created an artificial recurrent neural network, a stacked long short-term memory model, to predict HSBC Bank stock prices to make better buying/ selling decisions with root mean square error of 34.503. I also applied different logic into the model to make it predict the next 30 days of stock prices. I used Python to perform feature engineer and technical analysis on the stock.</p>
+<p><strong>This post is used as a quick overview of the project. For in-depth step-by-step code analysis, the GitHub repository and README.md for this project can be found <a href="https://github.com/chilam27/Stock_Price_Prediction">HERE</a>.</strong></p>
+<h1 id="table-of-contents">Table of Contents</h1>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#general-project-outline">General Project Outline</a></li>
+<li><a href="#overall-model-performance">Overall Model Performance</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+<li><a href="#acknowledgments">Acknowledgments</a></li>
+</ul>
+<h1 id="introduction">Introduction</h1>
+<blockquote>
+<p>&ldquo;The greatest risks are never the ones you can see and measure, but the ones you can&rsquo;t see and therefore can never measure. The ones that seem so far outside the boundary of normal probability that you can&rsquo;t imagine they could happend in your lifetime&ndash;even though, of course, they do happen, more often than you care to realize&rdquo; - Joe Nocera</p>
+</blockquote>
+<p>Recently, I took an interest in learning about the stock market and how day trading works. That was very odd of me considering countless times I heard people say that you will end up losing money when trading the market. But funny how a random guy on YouTube convinced me by saying something along the line of losing trades and losing trades but with risk management are two different things, one will make you lose money and the other will make you a better trader. Then, the YouTube channel that I used to learn about the topic and bet my future financial decision on is called <a href="https://www.youtube.com/channel/UCux4_ZudBYgiZBPDvxVdhVQ"><em>Real Life Trading</em></a> by the guy mentioned above, Jerremy Alexandar Newsome. Although the channel seems gimmicky at first, Jerremy did an excellent job of simplifying how the market and all of its basic (at least for the introduction course I am taking). Getting further into the material, I started to learn about different indicators that predict the stock movement and the meaning of those indicators. I was surprised to hear that, as a trader using mostly technical analysis to trade stock as Jerremy himself, those indicators that he taught me are things he considered the most when making his stock decisions.</p>
+<p>As an aspiring data scientist, I saw that stock technical analysis is simply using past data to predict future outcomes. Since many of the supervised learning algorithms function the same way, I decided to see if I could apply one of the algorithms to a history of stock prices and predict what the future prices will be. I chose to apply the <em>Long short-term memory (LSTM)</em> algorithm to predict the stock prices. My goal for this project is to see how accurate can a machine predict the stock market and therefore answers the question of whether I can depend on the prediction to make my trading decision. Here are two things I would like to learn our of this project:</p>
+<ol>
+<li>Create technical analysis indicators on Python</li>
+<li>Learn how an artificial recurrent neural network (RNN), specifically <code>LSTM</code>, works</li>
+</ol>
+<p><em>Disclaimer: I am no way shape or form an expert in trading the stock market and would not recommend anyone to use this model to base their trading/ investing decision.</em></p>
+<h1 id="general-project-outline">General Project Outline</h1>
+<ol>
+<li>
+<p>Data Wrangling: I got stock price data of HSBC bank from a Python library called <code>yfinance</code> and created 18 additional indicators acted as variables based on the stock prices. All candlestick related knowledge that I used is based on Jerremy&rsquo;s ebook: <a href="https://dashboard.reallifetrading.com/assets/pdf/candlesticks.pdf">&ldquo;EVERYTHING YOU NEED TO KNOW ABOUT CANDLESTICKS&rdquo;</a>.</p>
+</li>
+<li>
+<p>Exploratory Data Analysis (EDA): plotting three different plots showing: long-term trend, short-term trend, and current trend. I also created a candlestick chart using <code>mplfinance</code> library. Then, I implemented a simple trading plan only using moving averages and plotted it.</p>
+</li>
+<li>
+<p>Model Building: first, I normalized the data and split them into train and test data set. Then, I built a stacked <code>LSTM</code> model and plot the prediction. Lastly, I did the same step as previously but try to predict the prices of the next 30 days and plot it. The performance metric I used for my model is the root mean square error (RMSE).</p>
+</li>
+</ol>
+<h2 id="overall-model-performance">Overall Model Performance</h2>
+<p>I plotted the actual price, the prediction of train data set and the prediction of the test data set below. The figure 22 showed a big picture of how good the accury is for the prediction is to the actual data. This means that with the current model, I could identify the general trend of the stock. Looking into it more closely with figure 23, here I only showed data of the last 10 days, it is now easier to see the precision of the prediction is not so great. There seems to be a little bit of a delay for the prediction in terms of changes happened to the stock prices.</p>
+<p><img src="https://chilam27.github.io/Chi_Portfolio/images/blog/P04_fig1_1.png" alt="image info"></p>
+<p><img src="https://chilam27.github.io/Chi_Portfolio/images/blog/P04_fig2.png" alt="image info"></p>
+<p>The last thing I tried to do with the project is to predict the next 30 days of the closing price of the HSBC stock. I used the code from Krish&rsquo;s YouTube video to perform this prediction. The steps for preparing the data (such as reshaping) and applying the input data set into the model is very similar as I did above. The only differnce for this part was adding the logic of continue to add the new price prediction into the input data set and make it keep predicting on a loop. In the end, the output of predictions looked like the figure below.</p>
+<p><img src="https://chilam27.github.io/Chi_Portfolio/images/blog/P04_fig3.png" alt="image info"></p>
+<p>In the train and test data set predictions&rsquo; performances, I took the prediction from the model and reshaped it back to the original form. The last step is to find the RMSE of the test and train data set by taking the square root of the &ldquo;mean_squared_error&rdquo; function:</p>
+<p><img src="https://chilam27.github.io/Chi_Portfolio/images/blog/P04_fig4.png" alt="image info"></p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Because both RMSE of train and test data set are very closed and small, I can say that the model did very well in predicting the stock prices of HSBC (especially predicting the general trend of the future prices). But taking a look at the 30 days prediction, I would not depend on it too much. I am surprised to see that the model&rsquo;s prediction is opposite from mine: that the stock will go down in price. If this is true, it will be quite concerning for the bank because the stock price had not gone that low for years. Maybe the pandemic might affect the stock market in some way but I do not think that the model took the pandemic into the account here. All jokes aside, I could conclude that the further into the future the model has to guess, the less accurate and precise the prediction can be. I felt that this project would be very beneficial to those who are investors than traders. The reason being traders need precision while investors only need to know the trend of the stock price.</p>
+<p>Overall, I believed that I did a very good job of analyzing the HSBC stock and implementing the stacked <code>LSTM</code> model to predict the future close price. Something I could change if I revisit this project is to try different numbers of hidden layers for the model and the layers itself to see if it can better predict the price. I could also use a different performance metric, such as mean absolute error (MAE), to determine the performance of the model.</p>
+<p>If I were to continue this project, I would spend more time to develop a stronger trading plan that involves different special candlesticks/ patterns and presented it in the EDA section. It would also be very interesting to compare different models&rsquo; performances (such as stacked LSTM and a different model where I can have the candlesticks/ patterns as variables instead of only the closing price) to see whether there is any model out there that can beat a deep learning model in predicting stock prices.</p>
+<h1 id="acknowledgments">Acknowledgments</h1>
+<p><a href="https://www.datacamp.com/community/tutorials/lstm-python-stock-market">Ganegedara, T. (2020, January 1). (Tutorial) LSTM in Python: Stock Market Predictions.</a></p>
+<p><a href="https://towardsdatascience.com/how-to-get-stock-data-using-python-c0de1df17e75">Kharkar, R. (2020, January 27). How to Get Stock Data Using Python.</a></p>
+<p><a href="https://dashboard.reallifetrading.com/assets/pdf/candlesticks.pdf">Newsome, J. (n.d.). EVERYTHING YOU NEED TO KNOW ABOUT CANDLESTICKS [PDF].</a></p>
+<p><a href="https://www.analyticsvidhya.com/blog/2018/10/predicting-stock-price-machine-learningnd-deep-learning-techniques-python/">Singh, A. (2020, May 07). Stock Price Prediction Using Machine Learning: Deep Learning.</a></p>
+<p><a href="https://coderzcolumn.com/tutorials/data-science/candlestick-chart-in-python-mplfinance-plotly-bokeh">Solanki, S. (2020, May 10). Candlestick Chart in Python (mplfinance, plotly, bokeh) by Sunny Solanki.</a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section Start -->
+<footer id="footer">
+    <div class="container">
+        <div class="row content-justify-between">
+            <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                <p class="copyright">Copyright:
+                    <span>
+                        <script>document.write(new Date().getFullYear())</script>
+                    </span> Design and Developed by
+                    <a href="http://www.Themefisher.com" target="_blank">Themefisher</a>.
+                    <br> Get More Bootstrap Template From Our
+                    <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Store</a>
+                </p>
+            </div>
+            <div class="col-md-4 col-12">
+                <!-- Social Media -->
+                <ul class="social text-center text-md-right text-lg-right">
+                    
+                    <li><a href="https://www.facebook.com/dchi27"><i class="ion-social-facebook"></i></a></li>
+                    
+                    <li><a href="https://www.linkedin.com/in/chi-dao-lam-0263891a0/"><i class="ion-social-linkedin"></i></a></li>
+                    
+                    <li><a href="https://github.com/chilam27"><i class="ion-social-github"></i></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer section end -->
+
+<!-- jquery -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/jQurey/jquery.min.js"></script>
+<!-- Form Validation -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/form-validation/jquery.form.js"></script>
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/form-validation/jquery.validate.min.js"></script>
+<!-- slick slider -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/slick/slick.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/bootstrap/bootstrap.min.js"></script>
+<!-- wow js -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/wow-js/wow.min.js"></script>
+<!-- slider js -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/slider/slider.js"></script>
+<!-- Fancybox -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/facncybox/jquery.fancybox.js"></script>
+<!-- template main js -->
+
+<script src="https://chilam27.github.io/Chi_Portfolio/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+</script></body>
+</html>

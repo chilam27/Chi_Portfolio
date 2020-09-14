@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>k-means on Chi Lam Website</title>
+    <link>https://chilam27.github.io/Chi_Portfolio/tags/k-means/</link>
+    <description>Recent content in k-means on Chi Lam Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Sep 2020 12:22:40 +0600</lastBuildDate>
+    
+	<atom:link href="https://chilam27.github.io/Chi_Portfolio/tags/k-means/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What are the Different Roles in a Professional PUBG Team?</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/project/roles_in_pubg/</link>
+      <pubDate>Sun, 13 Sep 2020 12:22:40 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/project/roles_in_pubg/</guid>
+      <description>This post will soon be updated. In the meantime, the GitHub repository with detail README.md for this project can be found HERE.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Hugo 0.74.1" />
+  
+  <!-- Mobile Specific Metas -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Improved Product Review System</title>
+  <link rel="icon" href="https://chilam27.github.io/Chi_Portfolio/images/favicon.ico">
+
+  <!-- Twitter Bootstrs CSS -->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/bootstrap/bootstrap.min.css">
+  <!-- Ionicons Fonts Css -->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/ionicons/ionicons.min.css">
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/animate-css/animate.css">
+  <!-- Hero area slider css-->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/slider/slider.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/slick/slick.css">
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/facncybox/jquery.fancybox.css">
+  <!-- hover -->
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/plugins/hover/hover-min.css">
+  <!-- template main css file -->
+  
+  <link rel="stylesheet" href="https://chilam27.github.io/Chi_Portfolio/css/style.min.css" integrity="" media="screen">
+</head><body><section class="top-bar animated-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand" href="https://chilam27.github.io/Chi_Portfolio/">
+						<img src="https://chilam27.github.io/Chi_Portfolio/images/logo2.png" alt="Chi Lam Website">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+						aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navigation">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="https://chilam27.github.io/Chi_Portfolio/">Home</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://chilam27.github.io/Chi_Portfolio/about">About</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://chilam27.github.io/Chi_Portfolio/skills">Skills</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://chilam27.github.io/Chi_Portfolio/resume">Resume</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://chilam27.github.io/Chi_Portfolio/project">Project</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://chilam27.github.io/Chi_Portfolio/contact">Contact</a>
+							</li>
+							
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="global-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2>Improved Product Review System</h2>
+                    <div class="portfolio-meta">
+                        <span>Wednesday, Jul 15, 2020</span>|
+                        <span> Tags:
+                            text sentimental analysis, Natural Language Processing, topic modeling
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="single-post">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                
+                <div class="post-img">
+                    <img class="img-fluid" alt="" src="https://chilam27.github.io/Chi_Portfolio/images/blog/P03.jpg">
+                </div>
+                
+                <div class="post-content">
+                    <h1 id="tldr">TL;DR</h1>
+<p>Improved the traditional product review system through text sentimental analysis and Natural Language Processing with a 63.96% accuracy score (using Log regression) and all AUC values above 0.75. By taking only the customer review comments of an Amazon’s product as input, I created a sentiment detection algorithm to rate the product based on its comment. I also included topic modeling in this project to detect the general topics of what the reviews are about.</p>
+<p><strong>This post is used as a quick overview of the project. For in-depth step-by-step code analysis, the GitHub repository and README.md for this project can be found <a href="https://github.com/chilam27/Improve_Product_Review_System">HERE</a>.</strong></p>
+<h1 id="table-of-contents">Table of Contents</h1>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#general-project-outline">General Project Outline</a></li>
+<li><a href="#overall-model-performance">Overall Model Performance</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+<li><a href="#acknowledgments">Acknowledgments</a></li>
+</ul>
+<h1 id="introduction">Introduction</h1>
+<p>I have an idea for this project from the situation I had when doing the thing that most college students do when they are bored: online shopping. I am a very frugal buyer myself. I spend a lot of time looking at the product description and its reviews to make sure I will not regret my purchases. Besides giant e-commerce companies (such as Amazon, Etsy, eBay, etc.), not a lot of other online retailers have anything better than a basic star and comment review system for their products. That is why, in my belief, those top tier companies are having better customer interactions. Better customer interactions can lead to sellers to improve their products and buyers, like me, have more confidence in buying the product.</p>
+<p>Combine with a new principle I just learned that is called <em>Principle of Least Effort</em> (it was first articulated by the Italian philosopher Guillaume Ferrero) and the idea that businesses improve by reducing the friction that is needed for a customer to buy their product (I learned it from a book: Atomic Habits by James Clear). I want to build a review system that reduces one step needed in writing a review: rating the product. In order to build a system like so, I need to have the machine to analyze the review comment and build a model that can predict the rating.</p>
+<p>Since this project touch on many of the fields I am unfamiliar with, there are a couple of things that I wanted to learn out of this project that I hope will benefit my journey of becoming a better data scientist:</p>
+<ol>
+<li>Scrape raw reviews from Amazon.</li>
+<li>Learn about text and sentimental analysis.</li>
+<li>Understand how feature engineer can give me a better outcome.</li>
+<li>Classification algorithms and the importance of feature scaling.</li>
+</ol>
+<h1 id="general-project-outline">General Project Outline</h1>
+<ol>
+<li>
+<p>Data collection: I build a web scrapper through <code>BeautifulSoup</code> and scrape an amazon product&rsquo;s review. For this project, I choose a clothing item: Dickies Men&rsquo;s Original 874 Work Pant. The reason for my decision is I have more experience with the product and the quantity for the review is ideal.</p>
+</li>
+<li>
+<p>Text preprocessing: or data cleaning; I mostly cleaned the review texts to remove noise and make it easy for the machine to read in the data.</p>
+</li>
+<li>
+<p>Exploratory Data Analysis: I analyze the target variable (&ldquo;rating&rdquo;) and examine its and other features&rsquo; relationships. In this phase, I also perform <code>Latent Dirichlet Allocation (LDA) topic modeling</code> to search for topics of each rating category.</p>
+</li>
+<li>
+<p>Model Building: I compare different classification algorithms (<code>logistic regression</code>, <code>Naive Bayes</code>, <code>random forest classifier</code>, <code>k-nearest neighbor (KNN)</code>, and <code>support vector machines (SVM)</code>) and choose the one that produces the best result. The performance metric I use for my multilabel classification algorithm is the accuracy classification score that computes subset accuracy.</p>
+</li>
+</ol>
+<h2 id="overall-model-performance">Overall Model Performance</h2>
+<p>The accuracy scores of the training data set from the five models I used surprise me. Specifically, the three models that give the highest scores are <code>Logistic Regression</code> (98.72%), <code>Gaussian Naive Bayes Classifier</code> (92.04%), and <code>Support vector machines</code> (91.09%). The two worst-performing models are <code>random forest classifier</code> (53.68%) and <code>K-Nearest Neighbors Classification</code> (55.35%). It is also interesting to note there are two clusters of accuracy scores produced by models above.</p>
+<p>My initial thought was that the top performance models are overfitted. Although I did apply many crucial text pre-processing techniques, any accuracy scores that are above 90% when dealing with real-world data is a bit too high. I would not be concerned if the two most simple classifiers (<code>Logistic</code> and <code>Gaussian Naive Bayes</code>) would be overfitted, but <code>SVMs</code> should not be.</p>
+<p>Moving on to the cluster of lower score models. Although the scores are a lot lower than the other cluster (at least 36% score difference), not only they are above the 50% mark, these models do not have the overfitting problem (hence the reason I included them for this project).</p>
+<p>Next step is to implement these models to the test data set to see how well they can predict the ratings based on customers reviews. Below are the accuracy scores of the five models:</p>
+<pre><code>Log regression:  0.6396396396396397
+Naive Bayes:  0.4244244244244244
+Random forest regression:  0.5375375375375375
+K-nearest neighbor:  0.5545545545545546
+Support vector machines:  0.6046046046046046
+</code></pre><p>As expected, while there is not a major difference between test data accuracy scores and training data accuracy scores for the lower score models&rsquo; cluster, the higher score models&rsquo; cluster test data accuracy scores drop (might due to the model simplicity, <code>Naive Bayes</code> becomes the worst performing model). By being the best performing model in the train data, <code>Log regression</code> is also the best model in the test data with a 63.96% accuracy score.</p>
+<p>In the figure below, I apply a confusion matrix to the multi-class classification model. Besides the chosen metric (accuracy score), there are three more to be considered: precision, recall, and f1-score. Precision answers the question: what is the proportion of all predicted positive being truly positive? Recall answers the question: what proportion of actual positives is correctly classified? In other words, precision emphasizes on the false positive and recall emphasize on the false negative. Because false positive or false negative outcome does not have much of a difference, let&rsquo;s look at the f1-score instead. F1-score is a good metric for my case because it is the balance between precision and recall. Figure 11 shows that the macro average of the f1-score is 0.41 and the weighted average of the f1-score is 0.57.</p>
+<p><img src="https://chilam27.github.io/Chi_Portfolio/images/blog/P03_fig1.png" alt="image info"></p>
+<p>Lastly, I plot the area under the curve (AUC)- receiver operating characteristic (ROC) curve. This plot tells us, specifically, how well my model can distinguish the classes (ratings) by showing the trade-off of true positive rate and false-positive rate for different threshold settings of the underlying model. Generally, if the curve is above the diagonal line (chance level) and the area is above 0.5, it can be considered a good ROC curve.</p>
+<p><img src="https://chilam27.github.io/Chi_Portfolio/images/blog/P03_fig2.png" alt="image info"></p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Based on the accuracy score being almost 64%, it is safe to say that the <code>Log regression</code> model predicts the rating based on the customer&rsquo;s review quite accurately. Since I also consider other metrics, I do need to keep in mind that f1-scores are quite low (especially the macro average of the f1-score being below 0.5). Taking a look at the AUC-ROC curve, by having all AUC values above 0.75, it proves that this model can also distinguish the different ratings very well. In conclusion, I have reached my goal for this project by not only making the model works but also make it produce a great result.</p>
+<p>I believe that with more data from other ratings (since &ldquo;5&rdquo; stars rating takes a big proportion of the entire data set), the model&rsquo;s accuracy scores will be improved. Because I have a large enough sample size, I could have applied k-fold validation to eliminate the overfitting problem while predicting the train data set.</p>
+<p>If I was to continue this project, I would apply some front end works by productionize the model. I want to make it predicts the rating I want to give to a product based on the sentiment of my review text after I hit the submit (submit the review) button. After that, it will analyze all the reviews per rating and pick out the keywords of each rating. This helps the customer to see what are the most commonly discussed topic from each of the ratings. If I can apply this system to an online store, it will eliminate a step that requires a customer to write a review and help them to get a glance at what others are saying about the product before buying. Hence better customer experience and interaction.</p>
+<p><img src="https://chilam27.github.io/Chi_Portfolio/images/blog/P03_fig3.png" alt="image info"></p>
+<h1 id="acknowledgments">Acknowledgments</h1>
+<p><a href="https://stackoverflow.com/a/38083189/138160970">Abhinav Arora. &ldquo;How to increase the model accuracy of logistic regression in Scikit python?&rdquo; #138160970. 28 June 2016. Forum post.</a></p>
+<p><a href="https://www.analyticsvidhya.com/blog/2016/08/beginners-guide-to-topic-modeling-in-python/">Bansal, S. (2016, August 24). Beginners Guide to Topic Modeling in Python and Feature Selection.</a></p>
+<p><a href="https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/">BhandariI, A. (2020, April 03). Feature Scaling: Standardization Vs Normalization.</a></p>
+<p><a href="https://towardsdatascience.com/sentiment-analysis-with-python-part-2-4f71e7bde59a">Kub, A. (2019, January 24). Sentiment Analysis with Python (Part 2).</a></p>
+<p><a href="https://towardsdatascience.com/roc-curve-explained-using-a-covid-19-hypothetical-example-binary-multi-class-classification-bab188ea869c">Loukas, S. (2020, June 14). ROC Curve Explained using a COVID-19 hypothetical example: Binary &amp; Multi-Class Classification&hellip;</a></p>
+<p><a href="https://www.kaggle.com/lakshmi25npathi/sentiment-analysis-of-imdb-movie-reviews/notebook">N, L. (2019, June 19). Sentiment Analysis of IMDB Movie Reviews.</a></p>
+<p><a href="https://towardsdatascience.com/understanding-confusion-matrix-a9ad42dcfd62">Narkhede, Sarang. (2018, May 9). Understanding Confusion Matrix.</a></p>
+<p><a href="https://www.geeksforgeeks.org/python-sentiment-analysis-using-vader/">Rai, A. (2019, January 23). Python: Sentiment Analysis using VADER.</a></p>
+<p><a href="https://stackoverflow.com/a/47091490/13816097">Yann Dubois. &ldquo;Expanding English language contractions in Python&rdquo; #13816097. 03 November 2017. Forum post.</a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section Start -->
+<footer id="footer">
+    <div class="container">
+        <div class="row content-justify-between">
+            <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                <p class="copyright">Copyright:
+                    <span>
+                        <script>document.write(new Date().getFullYear())</script>
+                    </span> Design and Developed by
+                    <a href="http://www.Themefisher.com" target="_blank">Themefisher</a>.
+                    <br> Get More Bootstrap Template From Our
+                    <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Store</a>
+                </p>
+            </div>
+            <div class="col-md-4 col-12">
+                <!-- Social Media -->
+                <ul class="social text-center text-md-right text-lg-right">
+                    
+                    <li><a href="https://www.facebook.com/dchi27"><i class="ion-social-facebook"></i></a></li>
+                    
+                    <li><a href="https://www.linkedin.com/in/chi-dao-lam-0263891a0/"><i class="ion-social-linkedin"></i></a></li>
+                    
+                    <li><a href="https://github.com/chilam27"><i class="ion-social-github"></i></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer section end -->
+
+<!-- jquery -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/jQurey/jquery.min.js"></script>
+<!-- Form Validation -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/form-validation/jquery.form.js"></script>
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/form-validation/jquery.validate.min.js"></script>
+<!-- slick slider -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/slick/slick.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/bootstrap/bootstrap.min.js"></script>
+<!-- wow js -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/wow-js/wow.min.js"></script>
+<!-- slider js -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/slider/slider.js"></script>
+<!-- Fancybox -->
+<script src="https://chilam27.github.io/Chi_Portfolio/plugins/facncybox/jquery.fancybox.js"></script>
+<!-- template main js -->
+
+<script src="https://chilam27.github.io/Chi_Portfolio/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+</script></body>
+</html>

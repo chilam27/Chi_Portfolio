@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>text sentimental analysis on Chi Lam Website</title>
+    <link>https://chilam27.github.io/Chi_Portfolio/tags/text-sentimental-analysis/</link>
+    <description>Recent content in text sentimental analysis on Chi Lam Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jul 2020 12:21:58 +0600</lastBuildDate>
+    
+	<atom:link href="https://chilam27.github.io/Chi_Portfolio/tags/text-sentimental-analysis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Improved Product Review System</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/project/improve_product_review_system/</link>
+      <pubDate>Wed, 15 Jul 2020 12:21:58 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/project/improve_product_review_system/</guid>
+      <description>TL;DR Improved the traditional product review system through text sentimental analysis and Natural Language Processing with a 63.96% accuracy score (using Log regression) and all AUC values above 0.75. By taking only the customer review comments of an Amazon’s product as input, I created a sentiment detection algorithm to rate the product based on its comment. I also included topic modeling in this project to detect the general topics of what the reviews are about.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>polynomial regression on Chi Lam Website</title>
+    <link>https://chilam27.github.io/Chi_Portfolio/tags/polynomial-regression/</link>
+    <description>Recent content in polynomial regression on Chi Lam Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Jun 2020 12:29:40 +0600</lastBuildDate>
+    
+	<atom:link href="https://chilam27.github.io/Chi_Portfolio/tags/polynomial-regression/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Country GDP Vs. Its Fertility and Mortality Rates</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/project/gdp_fertility_mortality_rates/</link>
+      <pubDate>Sun, 14 Jun 2020 12:29:40 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/project/gdp_fertility_mortality_rates/</guid>
+      <description>I want to see whether there is a relationship between a country&amp;rsquo;s GDP and its fertility and mortality rates. With the assumption: higher GDP corresponds with lower fertility and mortality rates, I will use data from World Bank Group to analyze using a regression model. I recreated this project from my CMSE class but improved it by applying a fundamental data science project&amp;rsquo;s outline.
+For in-depth step-by-step code analysis, the repository for this project can be found here.</description>
+    </item>
+    
+  </channel>
+</rss>

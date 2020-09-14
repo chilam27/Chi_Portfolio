@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>time series on Chi Lam Website</title>
+    <link>https://chilam27.github.io/Chi_Portfolio/tags/time-series/</link>
+    <description>Recent content in time series on Chi Lam Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jul 2020 12:22:40 +0600</lastBuildDate>
+    
+	<atom:link href="https://chilam27.github.io/Chi_Portfolio/tags/time-series/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stock Price Analysis and Prediction</title>
+      <link>https://chilam27.github.io/Chi_Portfolio/project/stock_price_prediction_and_analysis/</link>
+      <pubDate>Thu, 30 Jul 2020 12:22:40 +0600</pubDate>
+      
+      <guid>https://chilam27.github.io/Chi_Portfolio/project/stock_price_prediction_and_analysis/</guid>
+      <description>TL;DR Created an artificial recurrent neural network, a stacked long short-term memory model, to predict HSBC Bank stock prices to make better buying/ selling decisions with root mean square error of 34.503. I also applied different logic into the model to make it predict the next 30 days of stock prices. I used Python to perform feature engineer and technical analysis on the stock.
+This post is used as a quick overview of the project.</description>
+    </item>
+    
+  </channel>
+</rss>
